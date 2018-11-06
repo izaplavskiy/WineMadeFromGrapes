@@ -1,0 +1,43 @@
+#footer {
+	background-color: #1c1010;
+	color: #fffefe;
+	font-size: 14px;
+	padding: 10px 0;
+
+	@include media ('>=tablet') {
+		padding: 20px 0;
+		font-size: 22px;
+	}
+
+	a {
+		&:hover {
+			color: $orange;
+		}
+	}
+
+	.container {
+		@include media ('>=tablet') {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+
+	p {
+		margin-bottom: 10px;
+
+		@include media ('>=tablet') {
+			margin-bottom: 0;
+		}
+	}
+
+	.social-networks {
+		padding-right: 5px;
+	}
+}
+
+
+
+
+
